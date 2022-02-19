@@ -1,0 +1,36 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color:#e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.navbar .productLink{
+    font-size: 24px;
+    color: #14213d;
+}
+.cartLink{
+    position: relative;
+}
+.cartIcon{
+    width: 30px;
+}
+.cartIconBadge{
+    position: absolute;
+    bottom:66%;
+    right: 27px;
+    color: #14213d;
+    background-color: #fca311;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}

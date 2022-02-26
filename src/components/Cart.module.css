@@ -75,3 +75,22 @@
         text-align: center;
     }
 }
+@media (max-width:468px) {
+    .cart .image{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:360px) {
+    .cart .image{
+        width: 50px;
+    }
+    .cart .quantity,.increaseBtn ,.decreaseBtn , .removeBtn{
+        width: 20px;
+        height: 20px;
+    }
+    .decreaseIcon , .addIcon , .deleteIcon{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+

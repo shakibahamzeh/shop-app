@@ -80,6 +80,9 @@
     color: #ffffff;
     font-size: 14px;
 }
+
+/*responsive*/
+
 @media (max-width:769px) {
     .productContainer{
     width: 49%;

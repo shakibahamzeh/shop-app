@@ -1,10 +1,14 @@
 import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
+//context
 import { CartContext } from '../context/CartContextProvider';
+//css
 import styles from "./ShopCart.module.css";
+
 import Cart from './Cart';
 
 const ShopCart = () => {
+  //context
   const {state,dispatch} = useContext(CartContext);
   return (
     <section className={styles.container}>

@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { getProduct } from '../services/api';
-
+//create context 
 export const ProductContext=createContext();
 
 const ProductContextProvider=({children})=>{
@@ -17,8 +17,6 @@ const ProductContextProvider=({children})=>{
      <ProductContext.Provider value={products}>
       {children}
      </ProductContext.Provider>
-
- 
   )
 }
 

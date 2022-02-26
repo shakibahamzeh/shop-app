@@ -1,16 +1,18 @@
-import React from 'react';
-import { useContext } from 'react';
+import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
-
+//function
 import { shorten,isInCart,quantityCounter } from '../helper/functions';
-import { CartContext } from '../context/CartContextProvider';
+//css
 import styles from "./Product.module.css";
+//material ui
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
-
+//context
+import { CartContext } from '../context/CartContextProvider';
 
 const Product=({productData})=> {
+   //context
   const {state,dispatch} = useContext(CartContext);
    
   return (

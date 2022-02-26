@@ -1,12 +1,15 @@
 import React,{useContext} from 'react';
-import { CartContext } from '../context/CartContextProvider';
-import shopIcons from "../assets/icons/icons8-shopping-cart-24.png"
 import { Link } from 'react-router-dom';
+import shopIcons from "../assets/icons/icons8-shopping-cart-24.png";
 import styles from "./Navbar.module.css";
+
+//context
+import { CartContext } from '../context/CartContextProvider';
 
 
 
 const Navbar = () => {
+  //CartContext
     const {state} = useContext(CartContext);
   return (
       <div className={styles.navbar}>

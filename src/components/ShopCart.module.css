@@ -97,7 +97,7 @@
 }
 
 
-
+/*responsive*/
 
 @media (max-width:850px) {
    .container{
@@ -117,10 +117,41 @@
 .paymentContainer{
     position:static;
     width: 100%;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 } 
+}
+
+@media (max-width:360px) {
+    .paymentBtnContainer button{
+    font-size: 12px;
+    padding:5px;
+    margin:0 5px;
+}
+}
+
+@media (max-width:360px) {
+    .paymentBtnContainer button{
+    font-size: 12px;
+    padding:5px;
+    margin:0 5px;
+}
+.paymentContainer p{
+     font-size: 14px;
+}
+}
+@media (max-width:348px) {
+    .paymentBtnContainer{
+        width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .paymentBtnContainer button{
+        padding: 10px;
+        margin: 10px 0;
+    }
 }

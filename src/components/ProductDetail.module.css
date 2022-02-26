@@ -64,6 +64,7 @@
 .productContent .backLink:hover{
     opacity: 0.8;
 }
+/*responsive*/
 
 @media (max-width:769px) {
 .productDetailContainer .imageDetail{

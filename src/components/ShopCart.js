@@ -7,6 +7,7 @@ import Cart from './Cart';
 const ShopCart = () => {
   const {state,dispatch} = useContext(CartContext);
   return (
+    <section className={styles.container}>
       <div className={styles.shopContainer}>
          <div className={styles.cartContainer}>
            {
@@ -14,6 +15,7 @@ const ShopCart = () => {
            }
          </div>
          <div className={styles.paymentContainer}>
+           <div>
            {
            state.itemsCounter > 0 && <div className={styles.payment}>
              <p><span>Total Items :</span>{state.itemsCounter}</p>
@@ -24,6 +26,8 @@ const ShopCart = () => {
              </div>
             </div>
          }
+         </div>
+         <div>
          {
            state.checkOut && 
              <div className={styles.buyMoreContainer}>
@@ -31,6 +35,8 @@ const ShopCart = () => {
              <Link to="/products" className={styles.backLink}>Buy More</Link>
             </div>
          }
+         </div>
+         <div>
           {
            !state.checkOut && state.itemsCounter === 0 &&
              <div className={styles.buyMoreContainer}>
@@ -40,6 +46,8 @@ const ShopCart = () => {
          }
          </div>
          </div>
+      </div>
+    </section>
   )
 }
 

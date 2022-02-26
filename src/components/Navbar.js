@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className={styles.navbar}>
           
               <Link to="/products" className={styles.productLink}>Products</Link>
-              <div>
+              <div className={styles.navCartContainer}>
                   <Link to="/cart" className={styles.cartLink}>
                     <img src={shopIcons} alt="icon" className={styles.cartIcon}/></Link>
                     <span className={styles.cartIconBadge}>{state.itemsCounter}</span>

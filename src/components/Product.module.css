@@ -27,8 +27,12 @@
     font-weight: 500;
     margin-top: 20px;
 }
+
 .btnWrapper{
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .addToCartBtn{
@@ -39,6 +43,7 @@
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(74, 167, 74);
+    display: inline-block;
     transition: all 0.5s ease;
     font-size: 12px;
     font-weight: 500;
@@ -48,18 +53,21 @@
     border: 1px solid rgb(75, 143, 75);
 }
 .increaseBtn ,.decreaseBtn , .removeBtn{
-    padding: 8px;
-    margin: 0 2px;
+    width: 30px;
+    height: 30px;
     outline: none;
     border: none;
-    background-color: chocolate;
+    background-color: #fca311;
     cursor: pointer;
     width: fit-content;
     border-radius: 3px;
+    font-size: 14px;
+    margin: 0 5px;
+    color: #fff;
 }
- .removeBtn{
-     padding: 0.2rem;
- }
+ 
+ 
+ 
 .counter{
     display: inline-flex;
     align-items: center;

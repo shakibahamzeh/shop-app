@@ -9,6 +9,7 @@ import ShopCart from './components/ShopCart';
 import Navbar from './components/Navbar';
 
 function App() {
+  
   return (
 <ProductContextProvider>
  <CartContextProvider>

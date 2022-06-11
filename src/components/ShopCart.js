@@ -19,19 +19,19 @@ const ShopCart = () => {
            }
          </div>
          <div className={styles.paymentContainer}>
-           <div>
+          <div>
            {
            state.itemsCounter > 0 && <div className={styles.payment}>
-             <p><span>Total Items :</span>{state.itemsCounter}</p>
-             <p><span>Total payments :</span>{state.total} $</p>
+             <div><span>Total Items:</span><p>{state.itemsCounter}</p></div>
+             <div><span>Total payments:</span><p>{state.total} $</p></div>
              <div className={styles.paymentBtnContainer}>
                <button onClick={()=> dispatch({type:"CLEAR"})} className={styles.clear}>Clear</button>
                <button onClick={()=> dispatch({type:"CHECKOUT"})} className={styles.checkOut}>CheckOut</button>
              </div>
             </div>
-         }
-         </div>
-         <div>
+            }
+          </div>
+         <div className='checkoutContainer'>
          {
            state.checkOut && 
              <div className={styles.buyMoreContainer}>
@@ -43,7 +43,7 @@ const ShopCart = () => {
          <div>
           {
            !state.checkOut && state.itemsCounter === 0 &&
-             <div className={styles.buyMoreContainer}>
+            <div className={styles.buyMoreContainer}>
              <h3>Want to Buy?</h3>
              <Link to="/products" className={styles.backLink}>Go To Shop</Link>
            </div>

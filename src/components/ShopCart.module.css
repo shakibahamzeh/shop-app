@@ -3,20 +3,20 @@
     height: calc(100vh - 70px); 
 }
 .shopContainer{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 100px 40px 30px 40px;
     color: #14213d;
-   background-color: #ffffff;
-   border: 1px solid transparent;
+    background-color: #ffffff;
+    border: 1px solid transparent;
    -webkit-box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72); 
-   box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72);
-   padding: 20px 30px;
-   border-radius: 5px;
-   height: fit-content;
- position: relative;
-   
+    box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72);
+    padding: 20px 30px;
+    border-radius: 5px;
+    height: fit-content;
+    position: relative;
 }
 .cartContainer{
     width: 68%;
@@ -38,18 +38,27 @@
     justify-content: space-between;
     order: 1px solid transparent;
    -webkit-box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72); 
-   box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72);
-   border-radius: 5px;
+    box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72);
+    border-radius: 5px;
 }
+.payment div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*
 .payment span{
     margin-right: 5px;
-}
+}*/
 .paymentBtnContainer{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .paymentBtnContainer button{
     cursor: pointer;
@@ -96,20 +105,21 @@
     text-align: center;
 }
 
-
+.checkoutContainer{
+    width: 100%;
+}
 /*responsive*/
 
 @media (max-width:850px) {
-   .container{
-    width: 100%;
-    height: calc(100vh - 70px); 
+.container{
+    width: 100%; 
+    height: auto;
 }
 .shopContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 .cartContainer{
     width: 100%;
@@ -123,25 +133,35 @@
     justify-content: center;
 } 
 }
+@media (max-width:410px) {
+    .payment{
+        padding: 30px;
+    }
+    .payment div{
+        font-size: 14px;
+    }
+}
 
 @media (max-width:360px) {
-    .paymentBtnContainer button{
+   .paymentBtnContainer button{
     font-size: 12px;
     padding:5px;
     margin:0 5px;
 }
 }
-
-@media (max-width:360px) {
-    .paymentBtnContainer button{
-    font-size: 12px;
-    padding:5px;
-    margin:0 5px;
+@media (max-width:330px) {
+    .paymentBtnContainer{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.paymentContainer p{
-     font-size: 14px;
+.paymentBtnContainer button{
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem 0;
 }
 }
+/*
 @media (max-width:348px) {
     .paymentBtnContainer{
         width: 100%;
@@ -154,4 +174,4 @@
         padding: 10px;
         margin: 10px 0;
     }
-}
+}*/

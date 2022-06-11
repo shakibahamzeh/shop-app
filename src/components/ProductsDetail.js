@@ -16,11 +16,13 @@ function ProductsDetail(props) {
      
   return (
  <div className={styles.productDetailContainer}>
-      <img src={image} alt="product" className={styles.imageDetail}/>
+      <div className={styles.imageContainer}>
+          <img src={image} alt="product" className={styles.imageDetail}/>
+      </div>
       <div className={styles.productContent}>
         <h2>{title}</h2>
         <p className={styles.description}>{description}</p>
-        <p className={styles.category}><span>Category :</span> {category}</p>
+        <div className={styles.category}><span>Category :</span><p>{category}</p> </div>
         <div className={styles.buttonContainer}>
            <p className={styles.price}>{price} $</p>
            <Link to="/products" className={styles.backLink}>Back to shop</Link>

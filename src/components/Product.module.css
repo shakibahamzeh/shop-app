@@ -82,7 +82,11 @@
 }
 
 /*responsive*/
-
+@media (max-width:990px) {
+    .productContainer{
+        width: 31%;
+    }
+}
 @media (max-width:769px) {
     .productContainer{
     width: 49%;

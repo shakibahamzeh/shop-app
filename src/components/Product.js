@@ -14,7 +14,6 @@ import { CartContext } from '../context/CartContextProvider';
 const Product=({productData})=> {
    //context
   const {state,dispatch} = useContext(CartContext);
-   
   return (
   <div className={styles.productContainer}>
       <div>

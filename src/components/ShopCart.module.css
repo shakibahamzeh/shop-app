@@ -11,8 +11,8 @@
     color: #14213d;
     background-color: #ffffff;
     border: 1px solid transparent;
-   -webkit-box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72); 
-    box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72);
+  /* -webkit-box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72); 
+    box-shadow: 1px 1px 25px -5px rgba(0,0,0,0.72);*/
     padding: 20px 30px;
     border-radius: 5px;
     height: fit-content;
@@ -20,7 +20,7 @@
 }
 .cartContainer{
     width: 68%;
-    height: calc(100vh - 70px);
+    height: auto;
 }
 .paymentContainer{
     position:absolute;

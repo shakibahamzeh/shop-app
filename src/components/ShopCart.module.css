@@ -20,6 +20,7 @@
 }
 .cartContainer{
     width: 68%;
+    height: calc(100vh - 70px);
 }
 .paymentContainer{
     position:absolute;

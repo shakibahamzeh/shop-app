@@ -17,7 +17,7 @@ const sumItems = (items) =>{
 }
 
 const cartReducer = (state,action) => {
-    
+
    switch(action.type){
        case "ADD_ITEM":
            if(!state.selectedItems.find(item => item.id === action.payload.id)){
@@ -78,7 +78,15 @@ const CartContextProvider=({children})=> {
    
     const [state,dispatch]=useReducer(cartReducer,initialState,()=>{
         const localDate=localStorage.getItem('cart');
-        return  localDate ? JSON.parse(localDate) : [];
+        return  localDate ? 
+            JSON.parse(localDate) 
+            : 
+            {
+                selectedItems:[],
+                itemsCounter:0,
+                total:0,
+                checkOut:false
+            };
     });
    useEffect(()=>{
      localStorage.setItem("cart",JSON.stringify(state))
